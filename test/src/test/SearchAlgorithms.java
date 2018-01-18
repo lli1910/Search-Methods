@@ -40,10 +40,10 @@ public class SearchAlgorithms {
 			int mid = L + ((R - L) / 2);
 			
 			if(query < array[mid]) { //left side
-				R = R - mid +1;
+				R =  mid -1;
 			}
 			else if(query > array[mid]) { //right side
-				L = L+ mid - 1;
+				L = mid + 1;
 			}
 			else if(query == array[mid]) {
 				return mid;
